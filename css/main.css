@@ -403,3 +403,7 @@ section .firefoxos {
 .bespoke-bullet.bespoke-bullet-last-active {
   display: block;
 }
+
+pre[class*="language-"] { 
+  line-height: 1.5em
+}
