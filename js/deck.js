@@ -11,19 +11,6 @@
     bullets: true
   });
 
-  // This shit because my Kensington presentation clicker wasn't programmable
-  // Seriously I should have bought a Logitech
-
-  document.body.onclick = function(e) {
-    bespoke.prev();
-    return false;
-  }
-
-  document.oncontextmenu = function (e) { 
-     bespoke.next();
-     return false;
-  };
-
   if (document.styleSheets) {
     for (i = 0; i < document.styleSheets.length; ++i) {
       sheet = document.styleSheets[i];

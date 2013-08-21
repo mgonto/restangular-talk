@@ -1,126 +1,218 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Javascript Masterclass: How to go from being a good developer to a great one</title>
+        <title>Consuming REST APIs with Restangular: The AngularJS way</title>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/prism.css">
     </head>
     <body>
     <article>
-      <section data-bespoke-state="intro" class="intro">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              for JSConf 2013
-            </div>
-          </div>
-          <h1>Javascript Masterclass</h1>
-          <div class="byline">
-            <div class="classy">
-              by Angelina Fabbro
-            </div>
-          </div>
-          <h3>@angelinamagnum</h3>
-        </div>
-      </section>
-
-      <section data-bespoke-state="vancouver" class="vancouver">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              a programmer from
-            </div>
-          </div>
-          <h2>Sunny Vancouver</h2>
-          <div class="byline">
-            <div class="classy">
-              honestly it's not very sunny
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section data-bespoke-state="steamclock" class="steamclock">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              employed by the fine establishment
-            </div>
-          </div>
-          <h3>Steamclock Software</h3>
-          <div class="byline">
-            <div class="classy">
-              makin' mobile apps
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="spoiler">
-        <div class="content">
-          <h2>SPOILER</h2>
-        </div>
-      </section>
-
-      <section class="mozilla">
+      <section data-bespoke-state="start">
         <div class="content">
           <div class="unbrokenline"></div>
-          <h2>Joining Mozilla in early June</h2>
-          <div class="unbrokenline"></div>
-          <img src="img/firefoxos.png" class="firefoxos">
+          <h1>Consuming REST APIs with Restangular</h1>
+          <div class="byline">
+            <div class="classy">
+              by Martin Gontovnikas
+            </div>
+          </div>
+          <h3>@mgonto</h3>
         </div>
       </section>
 
-      <section class="intermediate">
+      <section data-bespoke-state="rockstar">
         <div class="content">
           <div class="byline">
             <div class="classy">
-              Not a beginner but also
+              I am a
             </div>
           </div>
-          <h3>Not an expert</h3>
+          <h2>rockstar</h2>
           <div class="unbrokenline"></div>
         </div>
       </section>
-
-      <section class="but-actually-its-about">
+      
+      <section data-bespoke-state="ninja">
         <div class="content">
           <div class="byline">
             <div class="classy">
-              this talk is actually about
+              and a
             </div>
           </div>
-          <h3>Trying to become an expert</h3>
+          <h2>ninja</h2>
           <div class="byline">
             <div class="classy">
-              as an intermediate developer
+              developer
             </div>
           </div>
         </div>
       </section>
 
-      <section class="biases-1">
+      <section data-bespoke-state="steamclock">
         <div class="content">
-          <h2>Let's get a few cognitive biases out of the way.</h3>
+          <div class="byline">
+            <div class="classy">
+              employed by 
+            </div>
+          </div>
+          <h3>Aquicore Inc.</h3>
+          <div class="byline">
+            <div class="classy">
+              making stuff happen
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="biases-2">
+      <section>
         <div class="content">
-          <h2>You are not special</h2>
+          <div class="byline">
+            <div class="classy">
+              this talk is about
+            </div>
+          </div>
+          <h3>Learning Restangular</h3>
+          <div class="byline">
+            <div class="classy">
+              and how to consume REST APIs with it
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="biases-3">
+      <section>
         <div class="content">
-          <h2>.. neither is anyone else</h2>
+          <h2>So Let's start</h3>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>Let's create a WebApp with AngularJS</h3>
         </div>
       </section>
 
-      <section class="biases-4">
+
+      <section data-bespoke-state="livecode">
         <div class="content">
-          <h2>Sorry moms of the world but this is like a motivational anti-pattern.</h2>
+          <div data-angular-app="helloWorld">
+            <input type="text" ng-model="person" value="" />
+            <span>Hello {{person}}</span>
+          </div>
+          <pre>
+            <code class="language-markup">
+&lt;input type=&quot;text&quot; ng-model=&quot;person&quot; value=&quot;&quot; /&gt;
+&lt;span&gt;Hello &#123;&#123;person&#125;&#125; &lt;/span&gt;
+            </code>
+          </pre>
+          
         </div>
       </section>
+
+      <section>
+        <div class="content">
+          <h2>I'm sorry to tell you this is not an app</h2>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>There's no real data</h2>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>There's no information</h2>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>We want a centralized point to access it</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="to-the-resque">
+        <div class="content">
+          <div class="byline">
+            <div class="classy">
+              tan ta taan ta tarararan
+            </div>
+          </div>
+          <h2>Rest to the resque</h2>
+          <div class="unbrokenline"></div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>AngularJS has $resource for this</h2>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>Let's use it</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content">
+          <p>Let's fetch an user</p>
+          <pre>
+            <code class="language-javascript">
+var User = $resource('/user/:userId', {userId:'@id'});
+var user = User.get({userId:123}, function() {
+  user.name = 'Gonto';
+  user.$save();
+});
+
+            </code>
+          </pre>
+          
+          <p>Let's now fetch his Cars</p>
+          <pre>
+            <code class="language-javascript">
+var Car = $resource('/user/:userId/cars/:carId',
+ {userId:123, carId:'@id'});
+ 
+ var cars = Car.query(function() {
+   var firstCar = cars[0];
+   firstCar.name = "Honda Fit";
+   firstCar.$save();
+ });
+
+            </code>
+          </pre>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="notcool">
+        <div class="content">
+          <h2>We need to create one Resource object per entity</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="notcool">
+        <div class="content">
+          <h2>It doesn't handle relationship between data</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="notcool">
+        <div class="content">
+          <h2>We can't use element's own href</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="notcool">
+        <div class="content">
+          <h2>We can't add configurations per resource agroupation</h2>
+        </div>
+      </section>
+      
+      
 
       <section class="biases-5">
         <div class="content">
@@ -777,5 +869,10 @@
     </script>
     <script src="js/bespoke.js"></script>
     <script src="js/deck.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.bootstrap.js"></script>
+    <script src="js/app.basic.js"></script>
     </body>
 </html>

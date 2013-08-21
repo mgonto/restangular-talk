@@ -51,15 +51,32 @@ img {
   margin: 30px auto;
 }
 
-article.intro::before {
+article.start::before {
   -webkit-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
   -moz-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
   filter: blur(0.5px) grayscale(0.3) brightness(0.4);
-  background-image: url("../img/whisky_masterclass.jpg");
+  background-image: url("../img/new/zen.jpg");
 }
 
-article.vancouver::before {
-  background-image: url("../img/vancouver.gif");
+article.rockstar::before {
+  -webkit-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
+  -moz-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
+  filter: blur(0.5px) grayscale(0.3) brightness(0.4);
+  background-image: url("../img/new/rockstar.jpg");
+}
+
+article.ninja::before {
+  -webkit-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
+  -moz-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
+  filter: blur(0.5px) grayscale(0.3) brightness(0.4);
+  background-image: url("../img/new/ninja.jpg");
+}
+
+article.to-the-resque::before {
+  -webkit-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
+  -moz-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
+  filter: blur(0.5px) grayscale(0.3) brightness(0.4);
+  background-image: url("../img/new/superman.jpg");
 }
 
 article.steamclock::before {
@@ -69,11 +86,11 @@ article.steamclock::before {
   background-image: url("../img/steamclock.jpg");
 }
 
-article.adventure-time::before {
-  -webkit-filter: grayscale(0) brightness(1);
-  -moz-filter: grayscale(0) brightness(1);
-  filter: grayscale(0) brightness(1);
-  background-image: url("../img/adventure-time.gif");
+article.notcool::before {
+  -webkit-filter: blur(1px) grayscale(0.3) brightness(0.1);
+  -moz-filter: blur(1px) grayscale(0.3) brightness(0.1);
+  filter: blur(1px) grayscale(0.3) brightness(0.1);
+  background-image: url("../img/new/notcool.jpg");
 }
 
 article.haters::before {
