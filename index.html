@@ -99,12 +99,8 @@
             <input type="text" ng-model="person" value="" />
             <span>Hello {{person}}</span>
           </div>
-          <pre>
-            <code class="language-markup">
-&lt;input type=&quot;text&quot; ng-model=&quot;person&quot; value=&quot;&quot; /&gt;
-&lt;span&gt;Hello &#123;&#123;person&#125;&#125; &lt;/span&gt;
-            </code>
-          </pre>
+          <pre><code class="language-markup">&lt;input type=&quot;text&quot; ng-model=&quot;person&quot; value=&quot;&quot; /&gt;
+&lt;span&gt;Hello &#123;&#123;person&#125;&#125; &lt;/span&gt;</code></pre>
           
         </div>
       </section>
@@ -160,155 +156,110 @@
       <section data-bespoke-state="code">
         <div class="content">
           <p>Let's fetch an user</p>
-          <pre>
-            <code class="language-javascript">
-var User = $resource('/user/:userId', {userId:'@id'});
+          <pre><code class="language-javascript">var User = $resource('/api/v1/user/:userId', {userId:'@id'});
 var user = User.get({userId:123}, function() {
   user.name = 'Gonto';
   user.$save();
-});
-
-            </code>
-          </pre>
+});</code></pre>
           
           <p>Let's now fetch his Cars</p>
-          <pre>
-            <code class="language-javascript">
-var Car = $resource('/user/:userId/cars/:carId',
+          <pre><code class="language-javascript">var Car = $resource('/api/v1/user/:userId/cars/:carId',
  {userId:123, carId:'@id'});
  
  var cars = Car.query(function() {
    var firstCar = cars[0];
    firstCar.name = "Honda Fit";
    firstCar.$save();
- });
-
-            </code>
-          </pre>
+ });</code></pre>
         </div>
       </section>
       
       <section data-bespoke-state="code">
         <div class="content nofade">
           <p>Let's fetch an user</p>
-          <pre data-line="1">
-            <code class="language-javascript">
-var User = $resource('/user/:userId', {userId:'@id'});
+          <pre data-line="1"><code class="language-javascript">var User = $resource('/api/v1/user/:userId', {userId:'@id'});
 var user = User.get({userId:123}, function() {
   user.name = 'Gonto';
   user.$save();
-});
-
-            </code>
-          </pre>
+});</code></pre>
           
           <p>Let's now fetch his Cars</p>
-          <pre>
-            <code class="language-javascript">
-var Car = $resource('/user/:userId/cars/:carId',
+          <pre><code class="language-javascript">var Car = $resource('/api/v1/user/:userId/cars/:carId',
  {userId:123, carId:'@id'});
  
  var cars = Car.query(function() {
    var firstCar = cars[0];
    firstCar.name = "Honda Fit";
    firstCar.$save();
- });
-
-            </code>
-          </pre>
+ });</code></pre>
         </div>
       </section>
       
       <section data-bespoke-state="code">
         <div class="content nofade">
           <p>Let's fetch an user</p>
-          <pre  data-line="2-4">
-            <code class="language-javascript">
-var User = $resource('/user/:userId', {userId:'@id'});
+          <pre  data-line="2-4"><code class="language-javascript">var User = $resource('/api/v1/user/:userId', {userId:'@id'});
 var user = User.get({userId:123}, function() {
   user.name = 'Gonto';
   user.$save();
-});
-
-            </code>
-          </pre>
+});</code></pre>
           
           <p>Let's now fetch his Cars</p>
-          <pre>
-            <code class="language-javascript">
-var Car = $resource('/user/:userId/cars/:carId',
+          <pre><code class="language-javascript">var Car = $resource('/api/v1/user/:userId/cars/:carId',
  {userId:123, carId:'@id'});
  
  var cars = Car.query(function() {
    var firstCar = cars[0];
    firstCar.name = "Honda Fit";
    firstCar.$save();
- });
-
-            </code>
-          </pre>
+ });</code></pre>
         </div>
       </section>
       
       <section data-bespoke-state="code">
         <div class="content nofade">
           <p>Let's fetch an user</p>
-          <pre>
-            <code class="language-javascript">
-var User = $resource('/user/:userId', {userId:'@id'});
+          <pre><code class="language-javascript">var User = $resource('/api/v1/user/:userId', {userId:'@id'});
 var user = User.get({userId:123}, function() {
   user.name = 'Gonto';
   user.$save();
-});
-
-            </code>
-          </pre>
+});</code></pre>
           
           <p>Let's now fetch his Cars</p>
-          <pre data-line="1-2">
-            <code class="language-javascript">
-var Car = $resource('/user/:userId/cars/:carId',
+          <pre data-line="1-2"><code class="language-javascript">var Car = $resource('/api/v1/user/:userId/cars/:carId',
  {userId:123, carId:'@id'});
  
  var cars = Car.query(function() {
    var firstCar = cars[0];
    firstCar.name = "Honda Fit";
    firstCar.$save();
- });
-
-            </code>
-          </pre>
+ });</code></pre>
         </div>
       </section>
       
       <section data-bespoke-state="code">
         <div class="content nofade">
           <p>Let's fetch an user</p>
-          <pre>
-            <code class="language-javascript">
-var User = $resource('/user/:userId', {userId:'@id'});
+          <pre><code class="language-javascript">var User = $resource('/api/v1/user/:userId', {userId:'@id'});
 var user = User.get({userId:123}, function() {
   user.name = 'Gonto';
   user.$save();
-});
-
-            </code>
-          </pre>
+});</code></pre>
           
           <p>Let's now fetch his Cars</p>
-          <pre data-line="4-8">
-            <code class="language-javascript">
-var Car = $resource('/user/:userId/cars/:carId',
+          <pre data-line="4-8"><code class="language-javascript">var Car = $resource('/api/v1/user/:userId/cars/:carId',
  {userId:123, carId:'@id'});
  
  var cars = Car.query(function() {
    var firstCar = cars[0];
    firstCar.name = "Honda Fit";
    firstCar.$save();
- });
-
-            </code>
-          </pre>
+ });</code></pre>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="notcool-gif">
+        <div class="content">
         </div>
       </section>
       
@@ -326,6 +277,12 @@ var Car = $resource('/user/:userId/cars/:carId',
       
       <section data-bespoke-state="notcool">
         <div class="content">
+          <h2>It doesn't handle nested RESTFul Resources</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="notcool">
+        <div class="content">
           <h2>We can't use element's own href</h2>
         </div>
       </section>
@@ -336,627 +293,296 @@ var Car = $resource('/user/:userId/cars/:carId',
         </div>
       </section>
       
+      <section data-bespoke-state="notcool-joey">
+        <div class="content">
+        </div>
+      </section>
+      
+      <section data-bespoke-state="bat-signal">
+        <div class="content">
+          <div class="unbrokenline"></div>
+          <h2>Restangular-Signal</h2>
+          <div class="byline">
+          <div class="classy">
+            I'm Restangular
+          </div>
+        </div>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content">
+          <p>First we configure it</p>
+          <pre><code class="language-javascript">RestangularProvider.setBaseUrl('/api/v1')</code></pre>
+          
+          <p>Let's fetch an user</p>
+          <pre><code class="language-javascript">Restangular.one('user', 123).get().then(function(user) {
+  $scope.user = user;
+  user.name = 'Gonto';
+  user.put();
+});</code></pre>
+          
+          <p>Let's now fetch his Cars</p>
+          <pre><code class="language-javascript">$scope.user.getList('cars').then(function(cars) {
+  var firstCar = cars[0];
+  firstCar.name = "Honda Fit";
+  firstCar.put();
+});</code></pre>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content nofade">
+          <p>First we configure it</p>
+          <pre><code class="language-javascript">RestangularProvider.setBaseUrl('/api/v1')</code></pre>
+          
+          <p>Let's fetch an user</p>
+          <pre data-line="1"><code class="language-javascript">Restangular.one('user', 123).get().then(function(user) {
+  $scope.user = user;
+  user.name = 'Gonto';
+  user.put();
+});</code></pre>
+          
+          <p>Let's now fetch his Cars</p>
+          <pre><code class="language-javascript">$scope.user.getList('cars').then(function(cars) {
+  var firstCar = cars[0];
+  firstCar.name = "Honda Fit";
+  firstCar.put();
+});</code></pre>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content nofade">
+          <p>First we configure it</p>
+          <pre><code class="language-javascript">RestangularProvider.setBaseUrl('/api/v1')</code></pre>
+          
+          <p>Let's fetch an user</p>
+          <pre data-line="2-4"><code class="language-javascript">Restangular.one('user', 123).get().then(function(user) {
+  $scope.user = user;
+  user.name = 'Gonto';
+  user.put();
+});</code></pre>
+          
+          <p>Let's now fetch his Cars</p>
+          <pre><code class="language-javascript">$scope.user.getList('cars').then(function(cars) {
+  var firstCar = cars[0];
+  firstCar.name = "Honda Fit";
+  firstCar.put();
+});</code></pre>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content nofade">
+          <p>First we configure it</p>
+          <pre><code class="language-javascript">RestangularProvider.setBaseUrl('/api/v1')</code></pre>
+          
+          <p>Let's fetch an user</p>
+          <pre><code class="language-javascript">Restangular.one('user', 123).get().then(function(user) {
+  $scope.user = user;
+  user.name = 'Gonto';
+  user.put();
+});</code></pre>
+          
+          <p>Let's now fetch his Cars</p>
+          <pre data-line="1"><code class="language-javascript">$scope.user.getList('cars').then(function(cars) {
+  var firstCar = cars[0];
+  firstCar.name = "Honda Fit";
+  firstCar.put();
+});</code></pre>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content nofade">
+          <p>First we configure it</p>
+          <pre><code class="language-javascript">RestangularProvider.setBaseUrl('/api/v1')</code></pre>
+          
+          <p>Let's fetch an user</p>
+          <pre><code class="language-javascript">Restangular.one('user', 123).get().then(function(user) {
+  $scope.user = user;
+  user.name = 'Gonto';
+  user.put();
+});</code></pre>
+          
+          <p>Let's now fetch his Cars</p>
+          <pre data-line="2-4"><code class="language-javascript">$scope.user.getList('cars').then(function(cars) {
+  var firstCar = cars[0];
+  firstCar.name = "Honda Fit";
+  firstCar.put();  
+  cars.post({name: 'New Model Extra Cool'});
+});</code></pre>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>What if the element has a link to self?</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content nofade">
+          <p>First we configure it</p>
+          <pre><code class="language-javascript">RestangularProvider.setRestangularFields({
+  selfLink: 'self.href'
+})</code></pre>
+          
+          <p>Let's fetch all users</p>
+          <pre data-line="2-4"><code class="language-javascript">Restangular.all('users').getList().then(function(users) {
+  // user.self.href = 'http://example.com/users/gonto'
+  // This triggers delete to that URL
+  users[0].remove()
+});</code></pre>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>How about adding my own methods and prperties?</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content">
+          <p>Let's add the methods</p>
+          <pre><code class="language-javascript">Restangular.addElementTransformer('users', false, function(user) {
+  user.addRestangularMethod('ping', 'post', 'do-ping', {'X-App': 'Example'});
+  return user;
+})
+
+// OR
+
+Restangular.extendModel('users', function(user) {
+  user.addRestangularMethod('ping', 'post', 'do-ping', {'X-App': 'Example'});
+  return user;
+});</code></pre>
+          
+          <p>Let's use it</p>
+          <pre><code class="language-javascript">Restangular.allUrl('users').getList().then(function(users) {
+  users[0].ping();
+  users[0].customPUT({message: 'Hey John'}, 'update-message');
+});</code></pre>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>You can navigate your hierarchies based on types or URLs</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content">
+          <pre><code class="language-javascript">Restangular.all('users').one('car', 123).get();
+Restangular.allUrl('users', 'http://example.com/usuarios').all('messages').getList();</code></pre>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>Can we configure this further?</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content">
+          <pre><code class="language-javascript">Restangular.setRestangularFields({
+  id: '_id.$oid'
+});
+
+Restangular.setResponseInterceptor(function(data, operation, what) {
+  stopLoading();
+  if (operation == 'getList') {
+    return data[what];
+  }
+  return data;
+});
+
+Restangular.setRequestInterceptor(function(elem) {
+  startLoading();
+  delete elem.extraInfo;
+  return elem;
+});
+
+Restangular.setMethodOverriders(['put', 'delete']);
+
+Restangular.setRequestSuffix('.json');
+
+Restangular.setErrorInterceptor(function(response) {
+  stopLoading();
+  displayError();
+});</code></pre>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content">
+          <p>Scoped configurations</p>
+          <pre><code class="language-javascript">var BondRestangular = Restangular.withConfig(function(RestangularConfigurer) {
+  RestangularConfigurer.setDefaultHeaders({'X-Auth': 'James Bond'})
+});
+
+BondRestangular.one('place', 12).get();</code></pre>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>It uses ETags by default. You don't have to worry about this</h2>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>It's entirely based on promises</h2>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>It supports all HTTP methods including Patch, Trace, etc.</h2>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
+          <h2>You can run custom operations</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="bowling">
+        <div class="content">
+        </div>
+      </section>
       
 
-      <section class="biases-5">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Nobody is born with 'natural talent'</h2>
-          <div class="byline">
-            <div class="classy">
-              people get really emotional over this
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="biases-6">
-        <div class="content">
-          <img src="img/feelings.gif">
-        </div>
-      </section>
-
-      <section class="biases-7">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h3>You are the result of many complicated interactions</h3>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="biases-8">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Influences that can 'make' you 'a natural'</h2>
-          <div class="unbrokenline"></div>
-            <h4>- Genetics</h4>
-            <h4>- Epigenetics (Environmental pressures affecting gene expression)</h4>
-            <h4>- Early childhood exposure to logical thinking</h4>
-            <h4>- Early childhood practice of logical skills</h4>
-            <h4>- Early framing of relationship to logical thinking</h4>
-        </div>
-      </section>
-
-      <section class="biases-9">
-        <div class="content">
-          <img src="img/my-feels.gif">
-        </div>
-      </section>
-
-      <section class="biases-10">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h3>Your feelings don't matter here</h3>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="biases-11">
-        <div class="content">
-          <blockquote class="classy">
-            <h4>"In spite of popular beliefs there is no one thing you’re destined to do.
-              Purpose doesn’t happen to you any more than love does. These things evolve when you commit yourself fully to something, or someone, and make the decision to work through the muck." <br />from <a href="http://www.deliberatism.com/editorial/the-muck/">Deliberatism - The Muck, by Eric Karjaluoto</a></h4>
-          </blockquote>
-        </div>
-      </section>
-      <section class="biases-12">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              There is so much goddamn
-            </div>
-          </div>
-          <h2>Problematic framing of this topic</h2>
-          <div class="byline">
-            <div class="classy">
-              and it only serves to discourage
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="biases-13">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Nobody's special?</h2>
-          <div class="byline">
-            <div class="classy">
-              and experts are 
-            </div>
-          </div>
-          <h2>Not born with natural talent?</h2>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="totally-rad">
-        <div class="content">
-          <img src="img/totallyrad.gif">
-        </div>
-      </section>
-
-      <section class="empower-1">
-        <div class="content">
-        <div class="unbrokenline"></div>
-          <h1>This is empowering</h1>
-        <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="empower-2">
-        <div class="content">
-          <h3>If you practice logical thinking</h3>
-        </div>
-      </section>
-
-      <section class="empower-3">
-        <div class="content">
-          <h3> and if you practice programming JavaScript a lot</h3>
-        </div>
-      </section>
-
-      <section class="empower-4">
-        <div class="content">
-          <h3>and absorb enough domain knowledge</h3>
-        </div>
-      </section>
-
-      <section class="empower-5">
-        <div class="content">
-          <h1>You too will become an expert</h1>
-        </div>
-      </section>
-
-      <section data-bespoke-state="adventure-time" class="adventure-time">
-        <div class="content">
-        </div>
-      </section>
-
-      <section class="am-i-a-beginner">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              tell me then
-            </div>
-          </div>
-          <h2>How do I know I am not a beginner?</h2>
-          <div class="byline">
-            <div class="classy">
-              I mean seriouly tell me how
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="beginner-1">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Clue #1
-            </div>
-          </div>
-          <h2>You can use the fundamentals in any language</h2>
-          <div class="unbrokenline">
-          </div>
-        </div>
-      </section>
-
-      <section class="beginner-2">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Clue #2
-            </div>
-          </div>
-          <h2>You are comfortable writing code from scratch</h2>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section class="beginner-3">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Clue #3
-            </div>
-          </div>
-          <h2>You peek inside the libs you use</h2>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section class="beginner-4">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Clue #4
-            </div>
-          </div>
-          <h2>You feel like your code is mediocre</h2>
-          <div class="byline">
-            <div class="classy">
-              but
-            </div>
-          </div>
-          <h2>you don't know what to do about it</h2>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section class="how-do-i-know-not-an-expert">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Well then...
-            </div>
-          </div>
-          <h3>How do I know I'm not an expert?</h3>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section class="not-expert-1">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Clue #1
-            </div>
-          </div>
-          <h3>You don't quite grok all the code you read</h3>
-          <div class="byline">
-            <div class="classy">
-              even when it has comments
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="not-expert-2">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Clue #2
-            </div>
-          </div>
-          <h3>You can't explain what you know</h3>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section class="not-expert-3">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Clue #3
-            </div>
-          </div>
-          <h3>You aren't confident debugging</h3>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section data-bespoke-state="debugging" class="first-things">
-        <div class="content">
-        </div>
-      </section> 
-
-      <section class="not-expert-4">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Clue #4
-            </div>
-          </div>
-          <h3>You rely on references way too much</h3>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section class="first-things">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Welcome to the
-            </div>
-          </div>
-          <h3>Ambiguous Zone of Intermediate-ness</h3>
-          <div class="byline">
-            <div class="classy">
-              ... you are not alone
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="curriculum-for-mastery">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              What does
-            </div>
-          </div>
-          <h3>a curriculum for mastery</h3>
-          <div class="byline">
-            <div class="classy">
-              look like?
-            </div>
-          </div>
-        </div>
-      </section> 
-
-      <section class="great-programmers">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              And also
-            </div>
-          </div>
-          <h3>What makes a great programmer?</h3>
-          <div class="byline">
-            <div class="classy">
-              seriously
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="depends-whos-asking">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h3>It depends who is asking</h3>
-          <div class="unbrokenline"></div>
-          <blockquote>
-            <h4>"To a project manager, the programmer who hits every deadline (regardless of quality) is a good programmer.<br><br>
-              To a customer, the programmer who solves their problem quickest is a good programmer.<br><br>
-              To a business owner, the programmer who makes them the most money is a good programmer.<br><br>
-              To a junior programmer, the best mentor is the good programmer.<br><br>
-              To another programmer, the programmer they are most likely to want to go into battle with is a good programmer." - <a href="http://edweissman.wordpress.com/2013/03/24/who-is-a-good-programmer/">Ed Weissman</a></h4>
-          </blockquote>
-        </div>
-      </section>      
-
-      <section class="what-to-learn">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h3>What do I need to learn to be an expert?</h3>
-          <div class="byline">
-            <div class="classy">
-              and like how do I even
-            </div>
-          </div>
-        </div>
-      </section>   
-
-      <section class="how-to-unstuck">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h3>What do I do?</h3>
-          <div class="byline">
-            <div class="classy">
-              I wanna feel unstuck
-            </div>
-          </div>
-        </div>
-      </section>  
-
-      <section class="sailor-moon">
-        <div class="content">
-          <img src="img/sailor-moon.gif">
-        </div>
-      </section>  
-
-      <section class="suggestion-1">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #1
-            </div>
-          </div>
-          <h3>Ask why obsessively</h3>
-          <div class="byline">
-            <div class="classy">
-              short of existential angst
-            </div>
-          </div>
-        </div>
-      </section>      
-
-      <section class="suggestion-2">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #2
-            </div>
-          </div>
-          <h3>Teach and/or speak at an event</h3>
-          <div class="unbrokenline">
-        </div>
-      </section> 
-
-      <section class="suggestion-3">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #3
-            </div>
-          </div>
-          <h3>Work through a suggested curriculum (books)</h3>
-          <div class="unbrokenline">
-        </div>
-      </section> 
-
-      <section class="jresig-web">
-        <div class="content">
-          <img src="img/jresig-web.png">
-        </div>
-      </section> 
-
-      <section class="jresig-book">
-        <div class="content">
-          <img src="img/ninja-book.jpg">
-        </div>
-      </section>
-
-      <section class="suggestion-4">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #4
-            </div>
-          </div>
-          <h3>Experiment recklessly (the code doesn't care)</h3>
-          <div class="unbrokenline">
-        </div>
-      </section> 
-
-      <section class="suggestion-5">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #5
-            </div>
-          </div>
-          <h3>Have opinions</h3>
-          <div class="unbrokenline">
-        </div>
-      </section> 
-
-      <section class="opinions">
-        <div class="content">
-          <img src="img/opinions.png">
-          <img src="img/justyour.jpg">
-        </div>
-      </section> 
-
-      <section class="suggestion-6">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #6
-            </div>
-          </div>
-          <h3>Seek mentorship</h3>
-          <div class="unbrokenline">
-        </div>
-      </section> 
-
-      <section class="suggestion-7">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #7
-            </div>
-          </div>
-          <h3>Program a lot</h3>
-          <div class="unbrokenline">
-        </div>
-      </section> 
-
-      <section class="suggestion-8">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #8
-            </div>
-          </div>
-          <h3>Stop fucking programming sometimes</h3>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section class="suggestion-9">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #9
-            </div>
-          </div>
-          <h3>Write JavaScript a lot</h3>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section class="suggestion-10">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #10
-            </div>
-          </div>
-          <h3>Write in another language for a while</h3>
-          <div class="unbrokenline">
-        </div>
-        <img src="img/confort-zone.png">
-      </section>
-
-      <section class="suggestion-11">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #11
-            </div>
-          </div>
-          <h3>Think like a programmer when AFK</h3>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section class="suggestion-12">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #12
-            </div>
-          </div>
-          <h3>Know what feedback is good feedback and reject all else</h3>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section class="sad-humans">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              It turns out that
-            </div>
-          </div>
-          <h3>Some people aren't very happy with themselves</h3>
-           <div class="byline">
-            <div class="classy">
-              and they will take it out on you
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section data-bespoke-state="haters" class="haters">
-        <div class="content">
-        </div>
-      </section>
-
-      <section class="know-feedback">
-        <h3>Good feedback vs. Troll feedback</h3>
-      </section>
-
-      <section class="imposter-syndrome">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Suggestion #13
-            </div>
-          </div>
-          <h3>Break free of imposter syndrome</h3>
-          <div class="unbrokenline">
-        </div>
-      </section>
-
-      <section class="the-final-word">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              It happens to many of us
-            </div>
-          </div>
-          <h3>If you write code you are a programmer: The end</h3>
-          <div class="byline">
-            <div class="classy">
-              relative ability regardless
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="love-the-process">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              I want you to
-            </div>
-          </div>
-          <h3>Fall in love with your process</h3>
-          <div class="byline">
-            <div class="classy">
-              work dat balance baby
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="the-end">
+      <section>
         <div class="content">
           <div class="byline">
             <div class="classy">
               This is the end of the presentation, so
             </div>
           </div>
-          <h3>Thank you wonderful humans</h3>
+          <h3>Thank you for listening</h3>
           <div class="byline">
             <div class="classy">
-              for inviting me to share
+              or at least pretending to
             </div>
           </div>
         </div>
       </section> 
+      
+      <section>
+        <div class="content">
+          <h1>Questions?</h1>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="the-end">
+        <div class="content"></div>
+      </section>
 
       <section data-bespoke-state="final" class="intro">
         <div class="content">
@@ -965,14 +591,14 @@ var Car = $resource('/user/:userId/cars/:carId',
               This has been
             </div>
           </div>
-          <h1>Javascript Masterclass</h1>
+          <h1>Consuming REST APIs with Restangular</h1>
           <div class="byline">
             <div class="classy">
-              by Angelina Fabbro
+              by Martin Gontovnikas
             </div>
           </div>
-          <h3>@angelinamagnum</h3>
-          <img src="img/pandataco.gif">
+          <h3>@mgonto</h3>
+          <img src="img/yupi.gif">
         </div>
       </section>
 
