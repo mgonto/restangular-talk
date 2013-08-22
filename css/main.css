@@ -105,7 +105,7 @@ article.bat-signal::before {
   -webkit-filter: blur(1px) grayscale(0.3) brightness(0.4);
   -moz-filter: blur(1px) grayscale(0.3) brightness(0.4);
   filter: blur(1px) grayscale(0.3) brightness(0.4);
-  background-image: url("../img/bat-signal.jpg");
+  background-image: url("../img/Bat-Signal.jpg");
 }
 
 article.notcool-joey::before {
