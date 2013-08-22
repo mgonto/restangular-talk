@@ -58,18 +58,12 @@ article.start::before {
   background-image: url("../img/zen.jpg");
 }
 
-article.rockstar::before {
-  -webkit-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
-  -moz-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
-  filter: blur(0.5px) grayscale(0.3) brightness(0.4);
-  background-image: url("../img/rockstar.jpg");
-}
-
-article.ninja::before {
-  -webkit-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
-  -moz-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
-  filter: blur(0.5px) grayscale(0.3) brightness(0.4);
-  background-image: url("../img/ninja.jpg");
+article.developer::before {
+  -webkit-filter: blur(0.5px) grayscale(0.3) brightness(0.2);
+  -moz-filter: blur(0.5px) grayscale(0.3) brightness(0.2);
+  filter: blur(0.5px) grayscale(0.3) brightness(0.2);
+  background-image: url("../img/bartnerd.png");
+  background-position: top;
 }
 
 article.to-the-resque::before {
