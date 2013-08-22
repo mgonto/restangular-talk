@@ -2,7 +2,7 @@
 
 This are the slides for the talk I did at AngularJS MTV Meetup.
 
-You can see them at XXXX
+You can see them at http://mgonto.github.io/restangular-talk
 
 ## Thanks
 
