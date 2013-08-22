@@ -129,6 +129,19 @@ article.the-end::before {
   background-image: url("../img/ironman.gif");
 }
 
+article.programming::before {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  background-size: contain;
+  background-image: url("../img/programming.gif");
+}
+
+article.programming {
+  background-color: white;
+  opacity: 0.95;
+}
+
 
 /* Everything else */
 * {
