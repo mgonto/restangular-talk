@@ -382,7 +382,6 @@ var user = User.get({userId:123}, function() {
   $scope.user = user;
   user.name = 'Gonto';
   user.put();
-  cars.post({name: 'New Model Extra Cool'});
 });</code></pre>
           
           <p>Let's now fetch his Cars</p>
@@ -409,6 +408,28 @@ var user = User.get({userId:123}, function() {
           
           <p>Let's now fetch his Cars</p>
           <pre data-line="2-4"><code class="language-javascript">$scope.user.getList('cars').then(function(cars) {
+  var firstCar = cars[0];
+  firstCar.name = "Honda Fit";
+  firstCar.put();  
+  cars.post({name: 'New Model Extra Cool'});
+});</code></pre>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code">
+        <div class="content nofade">
+          <p>First we configure it</p>
+          <pre><code class="language-javascript">RestangularProvider.setBaseUrl('/api/v1')</code></pre>
+          
+          <p>Let's fetch an user</p>
+          <pre><code class="language-javascript">Restangular.one('user', 123).get().then(function(user) {
+  $scope.user = user;
+  user.name = 'Gonto';
+  user.put();
+});</code></pre>
+          
+          <p>Let's now fetch his Cars</p>
+          <pre data-line="5"><code class="language-javascript">$scope.user.getList('cars').then(function(cars) {
   var firstCar = cars[0];
   firstCar.name = "Honda Fit";
   firstCar.put();  
