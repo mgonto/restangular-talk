@@ -1,5 +1,52 @@
-.code {
-  background-color: #FCF5DD;
+.code,
+.livecode {
+  background-color: #142444;
+}
+
+.livecode input {
+  background: #142444;
+  border: none;
+  border-bottom: 2px solid #12203F;
+  color: #FFF;
+  width: 80px;
+}
+
+.livecode input:focus {
+  outline: none;
+}
+
+.livecode .hello .result {
+  color: #F80;
+}
+
+.to-the-resque .content {
+  width: 550px;
+}
+
+:not(pre) > code[class*="language-"], 
+pre[class*="language-"] {
+  width: 800px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.long :not(pre) > code[class*="language-"], 
+.long pre[class*="language-"] {
+  width: 900px;
+}
+
+.line-highlight {
+  background: rgba(216, 223, 65, 0.13);
+}
+
+pre[data-line] {
+  padding: inherit;
+}
+
+.link a {
+  display: inline-block;
+  margin-top: 1em;
+  font-size: 2em;
 }
 
 /* ---- backgrounds ---- */
@@ -23,6 +70,7 @@ article.to-the-resque::before {
   -moz-filter: blur(0.5px) grayscale(0.3) brightness(0.4);
   filter: blur(0.5px) grayscale(0.3) brightness(0.4);
   background-image: url("../img/superman.jpg");
+  background-position: top;
 }
 
 article.steamclock::before {
@@ -44,6 +92,7 @@ article.notcool-gif::before {
   -moz-filter: grayscale(0) brightness(1);
   filter: grayscale(0) brightness(1);
   background-image: url("../img/notcool.gif");
+  background-size: 92% 100%;
 }
 
 

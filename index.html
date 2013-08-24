@@ -91,7 +91,7 @@
           <div data-angular-app="helloWorld">
             <span>Enter your name</span>
             <input type="text" ng-model="person" value="" />
-            <span>Hello {{person}}</span>
+            <p class="hello">Hello <span class="result">{{person}}</span></p>
           </div>
           <pre><code class="language-markup">&lt;input type=&quot;text&quot; ng-model=&quot;person&quot; value=&quot;&quot; /&gt;
 &lt;span&gt;Hello &#123;&#123;person&#125;&#125; &lt;/span&gt;</code></pre>
@@ -127,8 +127,8 @@
         <div class="content">
           <div class="byline">
             <div class="classy">
-              Look, it's SOAP. <br />
-              No, it's Remoting. <br />
+              Look, it's SOAP. 
+              No, it's Remoting. 
               No, it's
             </div>
           </div>
@@ -474,7 +474,7 @@ Restangular.extendModel('users', function(user) {
         </div>
       </section>
       
-      <section data-bespoke-state="code">
+      <section data-bespoke-state="code long">
         <div class="content">
           <pre><code class="language-javascript">Restangular.all('users').one('car', 123).get();
 Restangular.allUrl('users', 'http://example.com/usuarios').all('messages').getList();</code></pre>
@@ -518,7 +518,7 @@ Restangular.setErrorInterceptor(function(response) {
         </div>
       </section>
       
-      <section data-bespoke-state="code">
+      <section data-bespoke-state="code long">
         <div class="content">
           <p>Scoped configurations</p>
           <pre><code class="language-javascript">var BondRestangular = Restangular.withConfig(function(RestangularConfigurer) {
@@ -564,9 +564,10 @@ BondRestangular.one('place', 12).get();</code></pre>
         </div>
       </section>
       
-      <section>
+      <section data-bespoke-state="link">
         <div class="content">
-          <h3>Check it out at <a href="https://github.com/mgonto/restangular">https://github.com/mgonto/restangular</a></h3>
+          <h3>Check it out at</h3>
+          </span><a href="https://github.com/mgonto/restangular">github.com/mgonto/restangular</a>
         </div>
       </section>
       
