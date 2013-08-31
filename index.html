@@ -309,7 +309,7 @@ var user = User.get({userId:123}, function() {
       <section data-bespoke-state="code">
         <div class="content">
           <p>First we configure it</p>
-          <pre><code class="language-javascript">RestangularProvider.setBaseUrl('/api/v1')</code></pre>
+          <pre data-line="1"><code class="language-javascript">RestangularProvider.setBaseUrl('/api/v1')</code></pre>
           
           <p>Let's fetch an user</p>
           <pre><code class="language-javascript">Restangular.one('user', 123).get().then(function(user) {
@@ -440,6 +440,21 @@ var user = User.get({userId:123}, function() {
       
       <section>
         <div class="content">
+          <h2>You can navigate your hierarchies using all and one</h2>
+        </div>
+      </section>
+      
+      <section data-bespoke-state="code long">
+        <div class="content">
+          <pre><code class="language-javascript">Restangular.all('users').one('car', 123).get();
+Restangular.allUrl('users', 'http://example.com/users').all('messages').getList();
+Restangular.one('users', 123).all('cars').getList();
+$scope.user.all('cars').getList();</code></pre>
+        </div>
+      </section>
+      
+      <section>
+        <div class="content">
           <h2>What if the element has a link to self?</h2>
         </div>
       </section>
@@ -486,19 +501,6 @@ Restangular.extendModel('users', function(user) {
   users[0].ping();
   users[0].customPUT({message: 'Hey John'}, 'update-message');
 });</code></pre>
-        </div>
-      </section>
-      
-      <section>
-        <div class="content">
-          <h2>You can navigate your hierarchies based on types or URLs</h2>
-        </div>
-      </section>
-      
-      <section data-bespoke-state="code long">
-        <div class="content">
-          <pre><code class="language-javascript">Restangular.all('users').one('car', 123).get();
-Restangular.allUrl('users', 'http://example.com/usuarios').all('messages').getList();</code></pre>
         </div>
       </section>
       
