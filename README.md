@@ -9,3 +9,5 @@ You can see them at http://mgonto.github.io/restangular-talk
 I've based my presentation on @afabbro presentation for the JSConf 2013. Her presentation was also based on @glenmaddern so thanks to both of you!!
 
 I've used giff and images scattered from the Web, so thanks to everyone who made them!!
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mgonto/restangular-talk/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
